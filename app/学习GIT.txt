@@ -1,0 +1,21 @@
+git现在项目根文件 将隐藏的git显示
+git中配置用户和邮箱
+[user]
+    name=bh
+    email=xxxx
+
+ 添加项目进git push
+
+ 修改远程地址
+ git remote add origin https://github.com/[username]/projectname.git
+
+ 倘若提示remote origin already exists
+
+ 输入 git remote rm  origin  //意思是删除 origin标签下的信息
+
+ /**
+ 用 git rm 来删除文件，同时还会将这个删除操作记录下来；
+ 用 rm 来删除文件，仅仅是删除了物理文件，没有将其从 git 的记录中剔除。
+ **/
+
+ 记得PUSH
