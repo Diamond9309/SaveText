@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="savetxt.hxzdsb.bh.savetxt.MainActivity"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="条码保存"
+            android:textSize="20dp"
+
+            />
+
+        <Button
+            android:id="@+id/bth_save"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="查看条码信息"
+            android:textSize="12dp"
+            android:visibility="invisible"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/btn_cancel"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="清除"
+            android:textSize="12dp"
+
+
+
+            android:layout_alignBaseline="@+id/bth_save"
+            android:layout_alignBottom="@+id/bth_save"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:enabled="true"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:minLines="8"
+        android:gravity="top"
+        android:imeOptions="actionNone"
+        android:layout_weight="0.21"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存过的条码"
+        android:textSize="12dp"
+        />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+    <TextView
+        android:id="@+id/tv_read"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:text=""
+        >
+
+
+    </TextView>
+</ScrollView>
+</LinearLayout>
