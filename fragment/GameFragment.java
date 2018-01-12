@@ -21,7 +21,6 @@ public class GameFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_game, container, false);
         TextView tv_game = (TextView) view.findViewById(R.id.tv_game_fragment);
         tv_game.setText("这是一个游戏");
-        tv_game.setTextColor(getResources().getColor(R.color.blue));
         return view;
     }
 }

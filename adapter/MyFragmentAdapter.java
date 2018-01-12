@@ -4,6 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import savetxt.hxzdsb.bh.savetxt.MyTestActivity;
 import savetxt.hxzdsb.bh.savetxt.fragment.GameFragment;
 import savetxt.hxzdsb.bh.savetxt.fragment.MovieFragment;
 import savetxt.hxzdsb.bh.savetxt.fragment.MusicFragment;
@@ -30,7 +31,28 @@ public class MyFragmentAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return null;
+        Fragment fragment = null;
+        switch (position) {
+
+            case MyTestActivity.New_fragment:
+                fragment = newFragment;
+
+                break;
+            case MyTestActivity.Movie_fragment:
+                fragment = movieFragment;
+                break;
+            case MyTestActivity.Music_fragment:
+                fragment = musicFragment;
+                break;
+            case MyTestActivity.Game_fragment:
+                fragment = gameFragment;
+                break;
+
+
+        }
+
+
+        return fragment;
     }
 
     @Override
